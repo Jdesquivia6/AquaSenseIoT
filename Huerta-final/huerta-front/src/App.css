@@ -1,0 +1,50 @@
+/* Remove default centering */
+.App {
+  min-height: 100vh;
+}
+
+/* Custom button styles */
+.btn-hover {
+  transition: all 180ms ease-out;
+}
+
+.btn-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(14, 140, 110, 0.18);
+}
+
+/* Status indicators */
+.status-dot {
+  display: inline-flex;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 9999px;
+}
+
+.status-online {
+  background-color: hsl(var(--chart-1));
+}
+
+.status-offline {
+  background-color: hsl(var(--muted-foreground));
+}
+
+.status-warning {
+  background-color: hsl(var(--chart-3));
+}
+
+/* Card shadows */
+.card-shadow {
+  box-shadow: 0 1px 1px rgba(10, 20, 20, 0.03), 0 8px 24px rgba(10, 20, 20, 0.06);
+}
+
+.card-elevated {
+  box-shadow: 0 2px 6px rgba(10, 20, 20, 0.06), 0 16px 32px rgba(10, 20, 20, 0.10);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
